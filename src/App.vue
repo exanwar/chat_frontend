@@ -11,7 +11,7 @@ export default {
   },
   data() {
     return {
-      lightMode: true,
+      // lightMode: true,
     };
   },
   methods: {
