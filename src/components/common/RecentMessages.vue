@@ -53,7 +53,7 @@
         scrollbar-thumb-rounded-full
         scrollbar-track-rounded-full
       "
-      style="height: 73.5vh"
+      style="height: 76vh"
     >
       <div class="flex flex-col justify-center">
         <div

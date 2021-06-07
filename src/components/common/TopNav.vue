@@ -5,7 +5,7 @@
       justify-between
       w-full
       px-8
-      py-5
+      py-2
       border-b border-gray-300
     "
   >

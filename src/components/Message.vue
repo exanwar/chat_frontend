@@ -7,7 +7,7 @@
         justify-between
         items-center
         px-8
-        py-6
+        py-4
         border-b border-gray-300
       "
     >
@@ -17,8 +17,8 @@
     <!-- Messages -->
     <div
       class="
-        h-7/10
         flex flex-col
+        h-7.5/10
         px-8
         space-y-1
         overflow-y-scroll
@@ -28,6 +28,7 @@
         scrollbar-track-gray-200
         scrollbar-thumb-gray-400
       "
+      ref="chatContainer"
     >
       <!-- Date -->
       <div class="flex flex-row items-center py-5">
@@ -215,10 +216,103 @@
           labore nobis.
         </div>
       </div>
+      <!-- Date -->
+      <div class="flex flex-row items-center py-5">
+        <div class="flex flex-1 bg-gray-300 w-full h-0.5"></div>
+        <div
+          class="px-5 py-2.5 border border-gray-300 rounded-full bg-gray-300"
+        >
+          <h1 class="text-sm text-blue-500 font-bold tracking-wider">
+            July 27
+          </h1>
+        </div>
+        <div class="flex flex-1 bg-gray-300 w-full h-0.5"></div>
+      </div>
+
+      <!-- Send Message -->
+      <div class="flex flex-row justify-end items-center">
+        <div
+          class="
+            bg-gradient-to-r
+            from-purple-800
+            via-violet-900
+            to-purple-800
+            text-gray-100
+            px-10
+            py-3
+            rounded-full rounded-br-xl
+            w-2/4
+          "
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+      </div>
+      <div class="flex flex-row justify-end items-center">
+        <div
+          class="
+            bg-gradient-to-r
+            from-purple-800
+            via-violet-900
+            to-purple-800
+            text-gray-100
+            px-10
+            py-3
+            rounded-2xl
+            w-2/4
+          "
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+          pariatur.
+        </div>
+      </div>
+      <div class="flex flex-row justify-end items-center">
+        <div
+          class="
+            bg-gradient-to-r
+            from-purple-800
+            via-violet-900
+            to-purple-800
+            text-gray-100
+            px-10
+            py-3
+            rounded-full rounded-tr-xl
+            w-2/4
+          "
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ex
+          modi tenetur nihil placeat praesentium fuga at nostrum quasi cum!
+        </div>
+      </div>
+
+      <!-- Recieve Message -->
+      <div class="flex flex-row justify-start space-x-2">
+        <div class="flex items-end">
+          <img
+            src="@/assets/images/profile/17.jpg"
+            alt="user-image"
+            class="h-10 w-10 rounded-full"
+          />
+        </div>
+        <div
+          class="
+            bg-gradient-to-r
+            from-fuchsia-600
+            to-pink-600
+            text-gray-100
+            px-10
+            py-3
+            rounded-full rounded-bl-xl
+            w-2/4
+          "
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsum
+          labore nobis.
+        </div>
+      </div>
     </div>
 
     <!-- Text Area -->
-    <div class="relative align-bottom p-3 h-1/10">
+    <div class="relative align-bottom px-3 pt-2 h-1/10">
       <div class="flex flex-row justify-between rounded-xl bg-gray-300 p-3">
         <input
           type="text"
@@ -249,6 +343,15 @@ export default {
   components: {
     DotsVerticalIcon,
     CloudUploadIcon,
+  },
+  methods: {
+    scrollToBottom() {
+      var content = this.$refs.chatContainer;
+      content.scrollTop = content.scrollHeight;
+    },
+  },
+  mounted() {
+    this.scrollToBottom();
   },
 };
 </script>

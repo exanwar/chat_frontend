@@ -2,7 +2,6 @@
   <div
     class="
       w-full
-      h-9/10
       overflow-y-scroll
       scrollbar
       scrollbar-thumb-gray-700
@@ -11,6 +10,7 @@
       scrollbar-thumb-rounded-full
       scrollbar-track-rounded-full
     "
+    style="height: 92vh"
   >
     <div class="flex flex-col items-center px-4 py-3 space-y-3">
       <div class="relative">
