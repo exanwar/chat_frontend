@@ -1,12 +1,24 @@
 <template>
-  <div class="h-full w-full">
-    <div class="flex flex-col items-center p-3 space-y-4">
+  <div
+    class="
+      w-full
+      h-9/10
+      overflow-y-scroll
+      scrollbar
+      scrollbar-thumb-gray-700
+      scrollbar-track-gray-100
+      scrollbar-thin
+      scrollbar-thumb-rounded-full
+      scrollbar-track-rounded-full
+    "
+  >
+    <div class="flex flex-col items-center px-4 py-3 space-y-3">
       <div class="relative">
         <img
-          src="https://randomuser.me/api/portraits/men/51.jpg"
-          class="w-auto h-3/10 object-center object-cover"
+          src="@/assets/images/profile/17.jpg"
+          class="w-auto h-3/10 object-center object-cover rounded-lg"
         />
-        <div class="absolute left-1.5 bottom-1.5">
+        <div class="absolute left-2.5 bottom-2">
           <h1 class="text-white text-3xl font-bold">Bessie Cooper</h1>
           <div class="flex flex-row items-center space-x-1">
             <div class="bg-green-500 h-1.5 w-1.5 rounded-full"></div>
@@ -50,19 +62,19 @@
           <div class="flex flex-row space-x-1.5">
             <div class="relative">
               <img
-                src="https://randomuser.me/api/portraits/men/81.jpg"
+                src="@/assets/images/profile/1.jpg"
                 class="h-auto w-32 object-cover object-center"
               />
             </div>
             <div class="relative">
               <img
-                src="https://randomuser.me/api/portraits/men/81.jpg"
+                src="@/assets/images/profile/4.jpg"
                 class="h-auto w-32 object-cover object-center"
               />
             </div>
             <div class="relative">
               <img
-                src="https://randomuser.me/api/portraits/men/81.jpg"
+                src="@/assets/images/profile/5.jpg"
                 class="h-auto w-32 object-cover object-center"
               />
               <div
@@ -103,7 +115,7 @@
           </div>
           <div class="flex flex-col space-y-4">
             <div class="flex flex-row justify-between items-center">
-              <div class="flex flex-row space-x-3">
+              <div class="flex flex-row space-x-3 items-center">
                 <div class="bg-abmer-400 rounded-lg p-3">
                   <DocumentIcon class="h-6 w-6 text-gray-50" />
                 </div>
@@ -120,8 +132,8 @@
               </div>
             </div>
             <div class="flex flex-row justify-between items-center">
-              <div class="flex flex-row space-x-3">
-                <div class="bg-blue-600 rounded-lg p-3">
+              <div class="flex flex-row space-x-3 items-center">
+                <div class="bg-blue-400 rounded-lg p-3">
                   <DocumentIcon class="h-6 w-6 text-gray-50" />
                 </div>
                 <div class="flex flex-col">

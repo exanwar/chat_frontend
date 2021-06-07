@@ -35,9 +35,9 @@
       <div class="relative" @mouseover="showMenu" @mouseleave="hideMenu">
         <div class="flex flex-row items-center space-x-4 cursor-pointer">
           <img
-            src="@/assets/images/logo.png"
+            src="@/assets/images/profile/15.jpg"
             alt="avatar"
-            class="h-9 w-9 rounded-full"
+            class="h-12 w-12 rounded-full"
           />
           <div class="flex flex-col items-center">
             <h1 class="text-sm text-gray-700 font-semibold float-left">
