@@ -43,6 +43,9 @@ module.exports = {
         "9/10": "90vh",
         "9.5/10": "95vh",
       },
+      fontSize: {
+        xxs: "0.5rem",
+      },
     },
   },
   variants: {

@@ -3,7 +3,7 @@
     <!-- Heading -->
     <div
       class="
-        flex flex-row
+        flex
         justify-between
         items-center
         px-8
@@ -18,7 +18,6 @@
     <div
       class="
         flex flex-col
-        h-7.5/10
         px-8
         space-y-1
         overflow-y-scroll

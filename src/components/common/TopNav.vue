@@ -3,17 +3,18 @@
     class="
       flex flex-row
       justify-between
+      items-center
       w-full
       px-8
-      py-2
+      py-1.5
       border-b border-gray-300
     "
   >
-    <h1 class="text-3xl font-nunito tracking-wide font-bold text-gray-700">
+    <h1 class="text-2xl font-nunito tracking-wide font-bold text-gray-700">
       Messages
     </h1>
     <div class="flex flex-row space-x-7 pr-3 items-center">
-      <div class="relative">
+      <div class="relative cursor-pointer">
         <div class="rounded-full border border-gray-500 p-1">
           <BellIcon class="h-7 w-7 text-gray-500 animate-spin" />
         </div>
