@@ -2,7 +2,8 @@
   <div class="flex">
     <div
       class="
-        w-20
+        w-12
+        md:w-20
         flex-none
         min-h-screen
         h-screen
@@ -21,23 +22,42 @@
     <div class="flex-1 flex flex-col min-h-screen h-screen">
       <div class=""><top-nav /></div>
       <div class="flex-1 flex overflow-y-hidden">
-        <div class="w-72 flex-none flex flex-col border-r border-gray-300">
+        <div
+          class="
+            w-28
+            xs:w-36
+            sm:w-44
+            md:w-72
+            flex-none flex flex-col
+            border-r border-gray-300
+          "
+        >
           <recent-messages />
         </div>
-        <div class="flex-1 flex flex-col border-r border-gray-300">
+        <div class="flex-1 flex flex-col xl:border-r border-gray-300">
           <div class="">
             <div
               class="
                 flex
                 justify-between
                 items-center
-                px-8
+                px-3
+                sm:px-8
                 py-4
                 border-b border-gray-300
               "
             >
-              <h1 class="text-2xl font-bold text-gray-600">Bessie Cooper</h1>
-              <DotsVerticalIcon class="h-7 w-7 text-gray-600" />
+              <h1 class="text-xl sm:text-2xl font-bold text-gray-600">
+                Bessie Cooper
+              </h1>
+              <div class="flex">
+                <!-- <DotsVerticalIcon class="h-7 w-7 text-gray-600" /> -->
+                <div class="cursor-pointer">
+                  <InformationCircleIcon
+                    class="xl:hidden h-7 w-7 text-gray-600"
+                  />
+                </div>
+              </div>
             </div>
           </div>
           <div class="flex-1 flex flex-col justify-between overflow-y-hidden">
@@ -84,10 +104,22 @@
                     via-violet-900
                     to-purple-800
                     text-gray-100
-                    px-10
-                    py-3
-                    rounded-full rounded-br-xl
-                    w-2/4
+                    2xl:px-10
+                    xl:px-7
+                    lg:px-8
+                    sm:px-2
+                    px-1.5
+                    lg:py-3
+                    md:py-2
+                    py-1.5
+                    rounded-2xl
+                    lg:rounded-full lg:rounded-br-xl
+                    max-w-max
+                    w-11/12
+                    xs:w-11/12
+                    lg:w-10/12
+                    xl:w-9/12
+                    2xl:w-8/12
                   "
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing.
@@ -101,10 +133,21 @@
                     via-violet-900
                     to-purple-800
                     text-gray-100
-                    px-10
-                    py-3
+                    2xl:px-10
+                    xl:px-7
+                    lg:px-8
+                    sm:px-2
+                    px-1.5
+                    lg:py-3
+                    md:py-2
+                    py-1.5
                     rounded-2xl
-                    w-2/4
+                    max-w-max
+                    w-11/12
+                    xs:w-11/12
+                    lg:w-10/12
+                    xl:w-9/12
+                    2xl:w-8/12
                   "
                 >
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -119,10 +162,22 @@
                     via-violet-900
                     to-purple-800
                     text-gray-100
-                    px-10
-                    py-3
-                    rounded-full rounded-tr-xl
-                    w-2/4
+                    2xl:px-10
+                    xl:px-7
+                    lg:px-8
+                    sm:px-2
+                    px-1.5
+                    lg:py-3
+                    md:py-2
+                    py-1.5
+                    rounded-2xl
+                    lg:rounded-full lg:rounded-tr-xl
+                    max-w-max
+                    w-11/12
+                    xs:w-11/12
+                    lg:w-10/12
+                    xl:w-9/12
+                    2xl:w-8/12
                   "
                 >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -137,7 +192,7 @@
                   <img
                     src="@/assets/images/profile/17.jpg"
                     alt="user-image"
-                    class="h-10 w-10 rounded-full"
+                    class="h-7 w-7 sm:h-10 sm:w-10 rounded-full"
                   />
                 </div>
                 <div
@@ -146,10 +201,318 @@
                     from-fuchsia-600
                     to-pink-600
                     text-gray-100
-                    px-10
-                    py-3
-                    rounded-full rounded-bl-xl
-                    w-2/4
+                    2xl:px-10
+                    xl:px-7
+                    lg:px-8
+                    sm:px-2
+                    px-1.5
+                    lg:py-3
+                    md:py-2
+                    py-1.5
+                    rounded-2xl
+                    lg:rounded-full lg:rounded-bl-xl
+                    max-w-max
+                    w-11/12
+                    xs:w-11/12
+                    lg:w-10/12
+                    xl:w-9/12
+                    2xl:w-8/12
+                  "
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  ipsum labore nobis.
+                </div>
+              </div>
+
+              <!-- Date -->
+              <div class="flex flex-row items-center py-5">
+                <div class="flex flex-1 bg-gray-300 w-full h-0.5"></div>
+                <div
+                  class="
+                    px-5
+                    py-2.5
+                    border border-gray-300
+                    rounded-full
+                    bg-gray-300
+                  "
+                >
+                  <h1 class="text-sm text-blue-500 font-bold tracking-wider">
+                    June 25
+                  </h1>
+                </div>
+                <div class="flex flex-1 bg-gray-300 w-full h-0.5"></div>
+              </div>
+
+              <!-- Send Message -->
+              <div class="flex flex-row justify-end items-center">
+                <div
+                  class="
+                    bg-gradient-to-r
+                    from-purple-800
+                    via-violet-900
+                    to-purple-800
+                    text-gray-100
+                    2xl:px-10
+                    xl:px-7
+                    lg:px-8
+                    sm:px-2
+                    px-1.5
+                    lg:py-3
+                    md:py-2
+                    py-1.5
+                    rounded-2xl
+                    lg:rounded-full lg:rounded-br-xl
+                    max-w-max
+                    w-11/12
+                    xs:w-11/12
+                    lg:w-10/12
+                    xl:w-9/12
+                    2xl:w-8/12
+                  "
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </div>
+              </div>
+              <div class="flex flex-row justify-end items-center">
+                <div
+                  class="
+                    bg-gradient-to-r
+                    from-purple-800
+                    via-violet-900
+                    to-purple-800
+                    text-gray-100
+                    2xl:px-10
+                    xl:px-7
+                    lg:px-8
+                    sm:px-2
+                    px-1.5
+                    lg:py-3
+                    md:py-2
+                    py-1.5
+                    rounded-2xl
+                    max-w-max
+                    w-11/12
+                    xs:w-11/12
+                    lg:w-10/12
+                    xl:w-9/12
+                    2xl:w-8/12
+                  "
+                >
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil, pariatur.
+                </div>
+              </div>
+              <div class="flex flex-row justify-end items-center">
+                <div
+                  class="
+                    bg-gradient-to-r
+                    from-purple-800
+                    via-violet-900
+                    to-purple-800
+                    text-gray-100
+                    2xl:px-10
+                    xl:px-7
+                    lg:px-8
+                    sm:px-2
+                    px-1.5
+                    lg:py-3
+                    md:py-2
+                    py-1.5
+                    rounded-2xl
+                    lg:rounded-full lg:rounded-tr-xl
+                    max-w-max
+                    w-11/12
+                    xs:w-11/12
+                    lg:w-10/12
+                    xl:w-9/12
+                    2xl:w-8/12
+                  "
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nulla ex modi tenetur nihil placeat praesentium fuga at
+                  nostrum quasi cum!
+                </div>
+              </div>
+
+              <!-- Recieve Message -->
+              <div class="flex flex-row justify-start space-x-2">
+                <div class="flex items-end">
+                  <img
+                    src="@/assets/images/profile/17.jpg"
+                    alt="user-image"
+                    class="h-7 w-7 sm:h-10 sm:w-10 rounded-full"
+                  />
+                </div>
+                <div
+                  class="
+                    bg-gradient-to-r
+                    from-fuchsia-600
+                    to-pink-600
+                    text-gray-100
+                    2xl:px-10
+                    xl:px-7
+                    lg:px-8
+                    sm:px-2
+                    px-1.5
+                    lg:py-3
+                    md:py-2
+                    py-1.5
+                    rounded-2xl
+                    lg:rounded-full lg:rounded-bl-xl
+                    max-w-max
+                    w-11/12
+                    xs:w-11/12
+                    lg:w-10/12
+                    xl:w-9/12
+                    2xl:w-8/12
+                  "
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  ipsum labore nobis.
+                </div>
+              </div>
+
+              <!-- Date -->
+              <div class="flex flex-row items-center py-5">
+                <div class="flex flex-1 bg-gray-300 w-full h-0.5"></div>
+                <div
+                  class="
+                    px-5
+                    py-2.5
+                    border border-gray-300
+                    rounded-full
+                    bg-gray-300
+                  "
+                >
+                  <h1 class="text-sm text-blue-500 font-bold tracking-wider">
+                    June 25
+                  </h1>
+                </div>
+                <div class="flex flex-1 bg-gray-300 w-full h-0.5"></div>
+              </div>
+
+              <!-- Send Message -->
+              <div class="flex flex-row justify-end items-center">
+                <div
+                  class="
+                    bg-gradient-to-r
+                    from-purple-800
+                    via-violet-900
+                    to-purple-800
+                    text-gray-100
+                    2xl:px-10
+                    xl:px-7
+                    lg:px-8
+                    sm:px-2
+                    px-1.5
+                    lg:py-3
+                    md:py-2
+                    py-1.5
+                    rounded-2xl
+                    lg:rounded-full lg:rounded-br-xl
+                    max-w-max
+                    w-11/12
+                    xs:w-11/12
+                    lg:w-10/12
+                    xl:w-9/12
+                    2xl:w-8/12
+                  "
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </div>
+              </div>
+              <div class="flex flex-row justify-end items-center">
+                <div
+                  class="
+                    bg-gradient-to-r
+                    from-purple-800
+                    via-violet-900
+                    to-purple-800
+                    text-gray-100
+                    2xl:px-10
+                    xl:px-7
+                    lg:px-8
+                    sm:px-2
+                    px-1.5
+                    lg:py-3
+                    md:py-2
+                    py-1.5
+                    rounded-2xl
+                    max-w-max
+                    w-11/12
+                    xs:w-11/12
+                    lg:w-10/12
+                    xl:w-9/12
+                    2xl:w-8/12
+                  "
+                >
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil, pariatur.
+                </div>
+              </div>
+              <div class="flex flex-row justify-end items-center">
+                <div
+                  class="
+                    bg-gradient-to-r
+                    from-purple-800
+                    via-violet-900
+                    to-purple-800
+                    text-gray-100
+                    2xl:px-10
+                    xl:px-7
+                    lg:px-8
+                    sm:px-2
+                    px-1.5
+                    lg:py-3
+                    md:py-2
+                    py-1.5
+                    rounded-2xl
+                    lg:rounded-full lg:rounded-tr-xl
+                    max-w-max
+                    w-11/12
+                    xs:w-11/12
+                    lg:w-10/12
+                    xl:w-9/12
+                    2xl:w-8/12
+                  "
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nulla ex modi tenetur nihil placeat praesentium fuga at
+                  nostrum quasi cum!
+                </div>
+              </div>
+
+              <!-- Recieve Message -->
+              <div class="flex flex-row justify-start space-x-2">
+                <div class="flex items-end">
+                  <img
+                    src="@/assets/images/profile/17.jpg"
+                    alt="user-image"
+                    class="h-7 w-7 sm:h-10 sm:w-10 rounded-full"
+                  />
+                </div>
+                <div
+                  class="
+                    bg-gradient-to-r
+                    from-fuchsia-600
+                    to-pink-600
+                    text-gray-100
+                    2xl:px-10
+                    xl:px-7
+                    lg:px-8
+                    sm:px-2
+                    px-1.5
+                    lg:py-3
+                    md:py-2
+                    py-1.5
+                    rounded-2xl
+                    lg:rounded-full lg:rounded-bl-xl
+                    max-w-max
+                    w-11/12
+                    xs:w-11/12
+                    lg:w-10/12
+                    xl:w-9/12
+                    2xl:w-8/12
                   "
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
@@ -159,7 +522,7 @@
             </div>
             <div class="">
               <!-- Text Area -->
-              <div class="relative align-bottom px-3 py-2">
+              <div class="xs:px-3 px-1 py-2">
                 <div
                   class="
                     flex flex-row
@@ -173,25 +536,28 @@
                     type="text"
                     placeholder="Enter to send..."
                     class="
-                      text-lg text-gray-600
+                      text-sm
+                      xs:text-lg
+                      text-gray-600
                       tracking-wide
                       w-full
+                      xs:w-full
                       bg-gray-300
                       outline-none
-                      px-10
+                      xs:px-10
                     "
                   />
-                  <div
-                    class="
-                      bg-blue-500
-                      p-3
-                      rounded-xl
-                      overflow-hidden
-                      cursor-pointer
-                    "
-                  >
+                  <div class="bg-blue-500 rounded-xl px-3 py-2 cursor-pointer">
                     <!-- <CloudUploadIcon class="h-8 w-8 text-gray-100" /> -->
-                    <h1 class="px-5 text-gray-100 font-bold tracking-wider">
+                    <h1
+                      class="
+                        text-gray-100
+                        font-bold
+                        tracking-wider
+                        xs:text-base
+                        text-sm
+                      "
+                    >
                       Send
                     </h1>
                   </div>
@@ -211,6 +577,8 @@
             scrollbar-thin
             scrollbar-thumb-rounded-full
             scrollbar-track-rounded-full
+            hidden
+            xl:block
           "
         >
           <div class="flex flex-col items-center px-4 py-3 space-y-3">
@@ -373,7 +741,8 @@ import TopNav from "../components/common/TopNav.vue";
 import {
   DocumentIcon,
   DownloadIcon,
-  DotsVerticalIcon,
+  // DotsVerticalIcon,
+  InformationCircleIcon,
   // CloudUploadIcon,
 } from "@heroicons/vue/solid";
 import RecentMessages from "../components/common/RecentMessages.vue";
@@ -386,9 +755,19 @@ export default {
     TopNav,
     DocumentIcon,
     DownloadIcon,
-    DotsVerticalIcon,
+    // DotsVerticalIcon,
+    InformationCircleIcon,
     // CloudUploadIcon,
     RecentMessages,
+  },
+  methods: {
+    scrollToBottom() {
+      var content = this.$refs.chatContainer;
+      content.scrollTop = content.scrollHeight;
+    },
+  },
+  mounted() {
+    this.scrollToBottom();
   },
 };
 </script>

@@ -4,7 +4,6 @@
       flex flex-row
       justify-between
       items-center
-      w-full
       px-8
       py-1.5
       border-b border-gray-300
@@ -13,10 +12,19 @@
     <h1 class="text-2xl font-nunito tracking-wide font-bold text-gray-700">
       Messages
     </h1>
-    <div class="flex flex-row space-x-7 pr-3 items-center">
+    <div
+      class="
+        flex flex-row
+        space-x-2
+        md:space-x-2
+        xl:space-x-7
+        xl:pr-3
+        items-center
+      "
+    >
       <div class="relative cursor-pointer">
         <div class="rounded-full border border-gray-500 p-1">
-          <BellIcon class="h-7 w-7 text-gray-500 animate-spin" />
+          <BellIcon class="h-5 w-5 sm:h-7 sm:w-7 text-gray-500 animate-spin" />
         </div>
         <div
           class="
@@ -24,23 +32,25 @@
             top-0
             right-0
             bg-pink-800
-            h-3
-            w-3
+            h-2
+            w-2
+            sm:h-3
+            sm:w-3
             rounded-full
             transform
-            -translate-x-0.5 -translate-y-0.5
+            -translate-x-0.5 -translate-y-0
           "
         ></div>
       </div>
       <div class="bg-gray-300 w-0.5 h-full"></div>
       <div class="relative" @mouseover="showMenu" @mouseleave="hideMenu">
-        <div class="flex flex-row items-center space-x-4 cursor-pointer">
+        <div class="flex flex-row items-center sm:space-x-4 cursor-pointer">
           <img
             src="@/assets/images/profile/15.jpg"
             alt="avatar"
-            class="h-12 w-12 rounded-full"
+            class="h-10 w-10 sm:h-12 sm:w-12 rounded-full"
           />
-          <div class="flex flex-col items-center">
+          <div class="hidden sm:flex flex-col items-center">
             <h1 class="text-sm text-gray-700 font-semibold float-left">
               Yus Febrianto
             </h1>
@@ -49,8 +59,22 @@
               <p class="text-md text-gray-500">Available</p>
             </div>
           </div>
+          <div
+            class="
+              sm:hidden
+              bg-green-500
+              w-2
+              h-2
+              rounded-full
+              right-0
+              bottom-0
+              transform
+              -translate-x-1.5
+              translate-y-3
+            "
+          ></div>
           <div class="p-1 rounded-full shadow-2xl border border-gray-400">
-            <ChevronDownIcon class="h-4 w-4 text-gray-400" />
+            <ChevronDownIcon class="h-3 w-3 sm:h-4 sm:w-4 text-gray-400" />
           </div>
         </div>
         <transition name="dropdown-fade">
@@ -60,13 +84,15 @@
               absolute
               normal-case
               font-normal
-              xs:left-0
+              right-0
+              sm:left-0
               lg:right-0
               bg-white
               shadow
               overflow-hidden
               rounded-xl
-              w-48
+              w-40
+              sm:w-48
               border
               mt-2
               py-1
@@ -153,7 +179,11 @@
 </template>
 
 <script>
-import { BellIcon, ChevronDownIcon } from "@heroicons/vue/outline";
+import {
+  BellIcon,
+  ChevronDownIcon,
+  // InformationCircleIcon,
+} from "@heroicons/vue/outline";
 export default {
   setup() {
     return {};
@@ -161,6 +191,7 @@ export default {
   components: {
     BellIcon,
     ChevronDownIcon,
+    // InformationCircleIcon,
   },
   data() {
     return {
