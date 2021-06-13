@@ -27,7 +27,7 @@
 
 <script>
 import { SearchIcon } from "@heroicons/vue/outline";
-import FriendsList from "./chat/friends/FriendsList.vue";
+import FriendsList from "./FriendsList.vue";
 export default {
   setup() {
     return {};

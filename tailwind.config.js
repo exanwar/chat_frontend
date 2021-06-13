@@ -63,6 +63,9 @@ module.exports = {
       fontSize: {
         xxs: "0.5rem",
       },
+      fontFamily: {
+        nunito: ["Nunito"],
+      },
     },
   },
   variants: {

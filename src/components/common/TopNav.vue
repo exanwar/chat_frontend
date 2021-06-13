@@ -17,8 +17,7 @@
         flex flex-row
         space-x-2
         md:space-x-2
-        xl:space-x-7
-        xl:pr-3
+        xl:space-x-7 xl:pr-3
         items-center
       "
     >
@@ -34,8 +33,7 @@
             bg-pink-800
             h-2
             w-2
-            sm:h-3
-            sm:w-3
+            sm:h-3 sm:w-3
             rounded-full
             transform
             -translate-x-0.5 -translate-y-0
