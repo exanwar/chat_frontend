@@ -29,26 +29,26 @@
 </template>
 
 <script>
-  import Navigation from './components/common/Navigation.vue';
-  import TopNav from './components/common/TopNav.vue';
-  export default {
-    setup() {
-      return {};
-    },
-    components: {
-      Navigation,
-      TopNav,
-    },
-    data() {
-      return {
-        messages: [
-          {
-            '27-03-2020': {},
-          },
-        ],
-      };
-    },
-  };
+import Navigation from "./components/common/Navigation.vue";
+import TopNav from "./components/common/TopNav.vue";
+export default {
+  setup() {
+    return {};
+  },
+  components: {
+    Navigation,
+    TopNav,
+  },
+  data() {
+    return {
+      messages: [
+        {
+          "27-03-2020": {},
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

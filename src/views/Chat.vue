@@ -18,28 +18,28 @@
 </template>
 
 <script>
-  import LeftPart from '../components/common/chat/friends/LeftPart.vue';
-  import MiddlePart from '../components/common/chat/messages/MiddlePart.vue';
-  import LastPart from '../components/common/chat/friend-profile/LastPart.vue';
-  export default {
-    setup() {
-      return {};
-    },
-    components: {
-      LeftPart,
-      MiddlePart,
-      LastPart,
-    },
-    data() {
-      return {
-        messages: [
-          {
-            '27-03-2020': {},
-          },
-        ],
-      };
-    },
-  };
+import LeftPart from "../components/common/chat/friends/LeftPart.vue";
+import MiddlePart from "../components/common/chat/messages/MiddlePart.vue";
+import LastPart from "../components/common/chat/friend-profile/LastPart.vue";
+export default {
+  setup() {
+    return {};
+  },
+  components: {
+    LeftPart,
+    MiddlePart,
+    LastPart,
+  },
+  data() {
+    return {
+      messages: [
+        {
+          "27-03-2020": {},
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

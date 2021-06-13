@@ -81,52 +81,52 @@
 </template>
 
 <script>
-  import { InformationCircleIcon } from '@heroicons/vue/solid';
-  import DateBlock from './DateBlock.vue';
-  export default {
-    setup() {
-      return {};
+import { InformationCircleIcon } from "@heroicons/vue/solid";
+import DateBlock from "./DateBlock.vue";
+export default {
+  setup() {
+    return {};
+  },
+  components: {
+    InformationCircleIcon,
+    DateBlock,
+  },
+  data() {
+    return {
+      messages: [
+        {
+          h1: "hello",
+          h2: "hi!",
+        },
+        {
+          h3: "How are you",
+          h4: "I am fine",
+        },
+        {
+          h3: "How are you",
+          h4: "I am fine",
+        },
+        {
+          h3: "How are you",
+          h4: "I am fine",
+        },
+        {
+          h3: "How are you",
+          h4: "I am fine",
+        },
+      ],
+    };
+  },
+  methods: {
+    scrollToBottom() {
+      var content = this.$refs.chatContainer;
+      content.scrollTop = content.scrollHeight;
     },
-    components: {
-      InformationCircleIcon,
-      DateBlock,
-    },
-    data() {
-      return {
-        messages: [
-          {
-            h1: 'hello',
-            h2: 'hi!',
-          },
-          {
-            h3: 'How are you',
-            h4: 'I am fine',
-          },
-          {
-            h3: 'How are you',
-            h4: 'I am fine',
-          },
-          {
-            h3: 'How are you',
-            h4: 'I am fine',
-          },
-          {
-            h3: 'How are you',
-            h4: 'I am fine',
-          },
-        ],
-      };
-    },
-    methods: {
-      scrollToBottom() {
-        var content = this.$refs.chatContainer;
-        content.scrollTop = content.scrollHeight;
-      },
-    },
-    mounted() {
-      this.scrollToBottom();
-    },
-  };
+  },
+  mounted() {
+    this.scrollToBottom();
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

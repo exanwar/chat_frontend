@@ -160,16 +160,16 @@
 </template>
 
 <script>
-  import { DocumentIcon, DownloadIcon } from '@heroicons/vue/solid';
-  export default {
-    setup() {
-      return {};
-    },
-    components: {
-      DownloadIcon,
-      DocumentIcon,
-    },
-  };
+import { DocumentIcon, DownloadIcon } from "@heroicons/vue/solid";
+export default {
+  setup() {
+    return {};
+  },
+  components: {
+    DownloadIcon,
+    DocumentIcon,
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>
